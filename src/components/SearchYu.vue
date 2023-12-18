@@ -12,22 +12,22 @@
 <script>
 import { store } from '../js/store.js' 
 export default {
+
+    
     data() {
         return{
             store,
         }
     },
 
-    props: {
-        listacarte: {
-            type: Array,
-            required: true,
-        }
-    }
+   
+  
 
     
 }
 </script>
-<style lang="">
+<style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
     
 </style>
