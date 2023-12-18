@@ -1,6 +1,6 @@
 <template lang="">
    <section id="searchyu">
-        <article v-for="carte in listacarteyu">
+        <article v-for="carte in listacarte">
             <p>
                 {{ carte.name }}
             </p>
@@ -19,7 +19,7 @@ export default {
     },
 
     props: {
-        listacarteyu: {
+        listacarte: {
             type: Array,
             required: true,
         }
