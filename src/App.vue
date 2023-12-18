@@ -34,8 +34,9 @@ export default {
     getCarte(){
       axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0')
       .then((response) => {
-        console.log(response);
-        this.carte = response.data.results;
+        console.log(response.data.data);
+        this.carte = response.data.data;
+        
       })
       .catch(function (error){
         console.log(error);

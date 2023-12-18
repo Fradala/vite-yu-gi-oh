@@ -1,11 +1,15 @@
 <template lang="">
-   <section id="searchyu">
-        <article v-for="carte in listacarte">
-            <p>
-                {{ carte.name }}
-            </p>
+   <section id="searchyu" class="conteiner">
+        <div class="row">
+            <article v-for="carte in listacarte" class="col-md-4 col-lg-2">
+                <img src="" alt="">
+                <p>
+                    {{ carte.name }}
+                </p>
 
         </article>
+        </div>
+        
    </section>
 
 </template>
@@ -16,9 +20,17 @@ export default {
     
     data() {
         return{
+        
             store,
         }
     },
+
+    props: {
+        listacarte: {
+            type: Array,
+            required: true,
+        }
+    }
 
    
   
