@@ -1,16 +1,13 @@
 <template lang="">
-  
   <HeaderYu/>
   <MainYu/>
-  <SearchYu  :listacarte="carte"/>
+  
 </template>
 
 <script>
-
 import axios from 'axios';
 import HeaderYu from './components/HeaderYu.vue';
-import MainYu from './components/MainYu.vue';
-import SearchYu from './components/SearchYu.vue';
+import MainYu from './components/MainYu.vue'
 
 
 export default {
@@ -18,7 +15,7 @@ export default {
   components:{
     HeaderYu,
     MainYu,
-    SearchYu,
+    
     
   },
 

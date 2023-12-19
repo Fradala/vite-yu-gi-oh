@@ -1,16 +1,27 @@
 <template lang="">
-   <div class="container">
-        
-   </div>
+    <main>
+        <CardsWrapper/>
+
+    </main>
+   
     
 </template>
 <script>
+import CardsWrapper from './CardsWrapper.vue';
 export default {
-    name: 'MainYu'
+    components: {
+        CardsWrapper,
+    }
+    
 }
 </script>
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
+
+main{
+    padding: 4rem;
+    background-color: #d48f38;
+}
     
 </style>
