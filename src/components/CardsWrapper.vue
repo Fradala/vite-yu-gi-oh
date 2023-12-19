@@ -1,6 +1,7 @@
 <template lang="">
   <section id='cards-wrapper' class="container">
     <div class="row">
+       
         <h2 class="py-3 fs-6">
             Found {{ cardList.length }} cards
         </h2>

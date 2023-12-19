@@ -22,6 +22,10 @@ export default {
 main{
     padding: 4rem;
     background-color: #d48f38;
+
+    button{
+        border: none;
+    }
 }
     
 </style>
